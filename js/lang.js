@@ -107,6 +107,7 @@ const translations = {
     // Kontakt
     'kontakt.heading':       'Kontakt',
     'kontakt.body':          'Für Kooperationsanfragen, Abschlussarbeiten oder Vortragseinladungen — direkte Nachrichten bevorzugt.',
+    'kontakt.booking':       'Termin buchen',
     'kontakt.email':         'E-Mail',
     'kontakt.institution':   'Institution',
     'kontakt.linkedin':      'Profil ansehen',
@@ -230,6 +231,7 @@ const translations = {
     // Kontakt
     'kontakt.heading':       'Contact',
     'kontakt.body':          'For cooperation inquiries, theses, or speaking invitations — direct messages preferred.',
+    'kontakt.booking':       'Book a Meeting',
     'kontakt.email':         'Email',
     'kontakt.institution':   'Institution',
     'kontakt.linkedin':      'View profile',
