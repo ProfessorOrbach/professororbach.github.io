@@ -445,11 +445,6 @@
   background: var(--bg-primary);
 }
 
-.kontakt__booking {
-  display: inline-block;
-  margin-bottom: 2rem;
-}
-
 .kontakt__intro {
   font-size: 1rem;
   color: var(--text-secondary);
@@ -459,7 +454,7 @@
 
 .kontakt__cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
   margin-bottom: 3.5rem;
 }
