@@ -106,6 +106,10 @@
     padding-left: 1.75rem;
   }
 
+  .timeline__dot {
+    left: -28.5px;
+  }
+
   /* Tabs */
   .tab-btn {
     font-size: 0.9rem;
