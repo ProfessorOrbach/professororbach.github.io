@@ -1,0 +1,145 @@
+/* ============================================================
+   RESPONSIVE — TABLET (≤ 900px)
+   ============================================================ */
+@media (max-width: 900px) {
+
+  /* Hero */
+  .hero__content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero__body {
+    max-width: 100%;
+  }
+
+  .hero__cta {
+    justify-content: center;
+  }
+
+  /* Stats */
+  .stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 1.5rem;
+  }
+
+  /* Courses & Research grids */
+  .courses-grid,
+  .courses-grid--two,
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Kampagnen-Flow */
+  .flow-wrap { padding: 1.5rem; }
+  .flow-steps { gap: 0.25rem; }
+  .flow-step { min-width: 60px; }
+  .flow-step__label { font-size: 0.65rem; }
+
+  /* Kooperation */
+  .coop-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .coop-focus-box {
+    max-width: 100%;
+  }
+
+  /* Kontakt cards */
+  .kontakt__cards {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  /* Form */
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE — MOBILE (≤ 600px)
+   ============================================================ */
+@media (max-width: 600px) {
+
+  /* Nav */
+  .nav {
+    padding: 0 1rem;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  /* Hero */
+  .hero {
+    padding: calc(var(--nav-height) + 2rem) 1.25rem 3rem;
+  }
+
+  .hero__photo,
+  .hero__photo-placeholder {
+    width: 160px;
+    height: 160px;
+    font-size: 2.2rem;
+  }
+
+  /* Stats */
+  .stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1.75rem 1rem;
+  }
+
+  .stats__number {
+    font-size: 1.1rem;
+  }
+
+  /* Sections */
+  .section {
+    padding: 3.5rem 1.25rem;
+  }
+
+  /* Timeline */
+  .timeline {
+    padding-left: 1.75rem;
+  }
+
+  /* Tabs */
+  .tab-btn {
+    font-size: 0.9rem;
+    padding: 0.65rem 1.1rem;
+  }
+
+  /* Kontakt */
+  .kontakt__cards {
+    max-width: 100%;
+  }
+
+  /* Contact form */
+  .contact-form-wrap {
+    padding: 1.5rem;
+  }
+
+  /* Footer */
+  .footer__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ============================================================
+   VERY SMALL (≤ 380px)
+   ============================================================ */
+@media (max-width: 380px) {
+  .hero__cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,232 @@
+/* ============================================================
+   TH KÖLN THEME — Helles Design mit TH-Köln-Markenfarben
+   Primär: Violett · Sekundär: Orange · Akzent: Rot · Neutral: Grau
+   ============================================================ */
+
+:root {
+  --bg-primary:       #ffffff;
+  --bg-secondary:     #f5f4f6;       /* leicht violett getöntes Grau */
+  --bg-card:          #ede9f0;       /* etwas satter für Karten */
+  --accent:           #b43092;       /* TH Köln Violett — Primärfarbe */
+  --accent-hover:     #962880;
+  --accent-orange:    #ea5a00;       /* TH Köln Orange */
+  --accent-red:       #c81e0f;       /* TH Köln Rot */
+  --accent-gray:      #6b6b6b;       /* Neutrales Grau */
+  --accent-glow:      rgba(180, 48, 146, 0.09);
+  --accent-glow-lg:   rgba(180, 48, 146, 0.18);
+  --text-primary:     #1a1a1a;
+  --text-secondary:   #3d3d3d;
+  --text-muted:       #767676;
+  --border:           rgba(180, 48, 146, 0.15);
+  --border-hover:     rgba(180, 48, 146, 0.45);
+}
+
+/* TH Köln Gradient-Streifen oben — Rot · Orange · Violett */
+body::before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(to right, #c81e0f, #ea5a00, #b43092);
+  z-index: 200;
+}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav {
+  background: rgba(255, 255, 255, 0.93);
+  border-bottom: 1px solid rgba(180, 48, 146, 0.12);
+  top: 4px;
+}
+
+.nav__links a {
+  color: var(--accent-gray);
+}
+
+.nav__links a:hover {
+  color: var(--accent);
+  background: rgba(180, 48, 146, 0.06);
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  background:
+    radial-gradient(ellipse 70% 55% at 70% 30%, rgba(180, 48, 146, 0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 45% 45% at 15% 75%, rgba(234, 90, 0, 0.05) 0%, transparent 55%),
+    #ffffff;
+}
+
+.hero__tagline { color: var(--text-primary); }
+
+.hero__photo-placeholder {
+  background: #ede9f0;
+  color: var(--accent);
+}
+
+/* ============================================================
+   STATS
+   ============================================================ */
+.stats {
+  background: var(--bg-secondary);
+  border-top: 1px solid rgba(180, 48, 146, 0.10);
+  border-bottom: 1px solid rgba(180, 48, 146, 0.10);
+}
+
+/* ============================================================
+   TIMELINE
+   ============================================================ */
+.timeline::before {
+  background: linear-gradient(to bottom, #b43092 0%, rgba(180, 48, 146, 0.08) 100%);
+}
+
+.timeline__dot {
+  background: var(--accent);
+  box-shadow: 0 0 10px rgba(180, 48, 146, 0.45);
+}
+
+.timeline__year { color: var(--accent); }
+
+/* ============================================================
+   TABS
+   ============================================================ */
+.tabs-section { background: var(--bg-secondary); }
+
+.tab-btn--active,
+.tab-btn:hover { color: var(--accent); }
+
+.tab-btn--active { border-bottom-color: var(--accent); }
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+.course-card {
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.course-card:hover {
+  border-color: rgba(180, 48, 146, 0.45);
+  box-shadow: 0 4px 20px rgba(180, 48, 146, 0.12);
+}
+
+.course-card__tag { color: var(--accent); }
+
+.course-card__topics li::before { color: var(--accent); }
+
+.research-card {
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.research-card:hover {
+  border-color: rgba(180, 48, 146, 0.45);
+  box-shadow: 0 4px 20px rgba(180, 48, 146, 0.12);
+}
+
+.research-card__icon { color: var(--accent-orange); }
+
+/* ============================================================
+   KAMPAGNEN-FLOW
+   ============================================================ */
+.flow-wrap {
+  background: #fdf8fb;
+  border-color: rgba(180, 48, 146, 0.15);
+}
+
+.flow__heading { color: var(--accent); }
+
+.flow-step__icon {
+  background: rgba(180, 48, 146, 0.07);
+  border-color: rgba(180, 48, 146, 0.15);
+}
+
+.flow-step:hover .flow-step__icon {
+  background: rgba(180, 48, 146, 0.16);
+  border-color: var(--accent);
+}
+
+.flow-arrow { color: var(--accent-orange); opacity: 0.75; }
+
+/* ============================================================
+   KOOPERATION
+   ============================================================ */
+.coop-focus-box {
+  background: #fdf8fb;
+  border-color: rgba(180, 48, 146, 0.15);
+}
+
+.coop-focus-box h4 { color: var(--accent-gray); }
+
+.focus-tag {
+  background: rgba(180, 48, 146, 0.07);
+  border-color: rgba(180, 48, 146, 0.15);
+  color: var(--accent);
+}
+
+.focus-tag:hover {
+  background: rgba(180, 48, 146, 0.15);
+  border-color: var(--accent);
+}
+
+.coop__formats li::before { color: var(--accent-orange); }
+
+/* ============================================================
+   KONTAKT
+   ============================================================ */
+.kontakt { background: #ffffff; }
+
+.kontakt-card {
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.kontakt-card:hover {
+  border-color: rgba(180, 48, 146, 0.45);
+  box-shadow: 0 6px 24px rgba(180, 48, 146, 0.13);
+}
+
+.kontakt-card__value { color: var(--accent); }
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn--primary {
+  background: var(--accent);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(180, 48, 146, 0.28);
+}
+
+.btn--primary:hover {
+  background: var(--accent-hover);
+  color: #ffffff;
+  box-shadow: 0 6px 24px rgba(180, 48, 146, 0.42);
+}
+
+.btn--secondary {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn--secondary:hover {
+  background: rgba(180, 48, 146, 0.07);
+  color: var(--accent);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid rgba(180, 48, 146, 0.10);
+}
+
+.footer__links a:hover { color: var(--accent); }
+
+/* ============================================================
+   SCROLL-ANIMATION — dezenter auf hellem Hintergrund
+   ============================================================ */
+.animate-on-scroll { transform: translateY(20px); }
