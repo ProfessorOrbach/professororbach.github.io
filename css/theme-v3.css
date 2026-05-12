@@ -1,0 +1,215 @@
+/* ============================================================
+   VARIANTE 3 — Helles, freundliches Design
+   Warme Off-White-Hintergründe · Tiefes Teal als Akzent
+   ============================================================ */
+
+:root {
+  --bg-primary:     #f9f8f6;       /* warmes Off-White */
+  --bg-secondary:   #f0ece5;       /* warmes Beige */
+  --bg-card:        #ffffff;
+  --accent:         #0891b2;       /* tiefes Teal, lesbar auf Hell */
+  --accent-hover:   #0e7490;
+  --accent-glow:    rgba(8, 145, 178, 0.10);
+  --accent-glow-lg: rgba(8, 145, 178, 0.20);
+  --text-primary:   #1c2434;       /* warmes Dunkelblau-Grau */
+  --text-secondary: #4a5568;
+  --text-muted:     #8896aa;
+  --border:         rgba(8, 145, 178, 0.15);
+  --border-hover:   rgba(8, 145, 178, 0.42);
+}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav {
+  background: rgba(249, 248, 246, 0.92);
+  border-bottom: 1px solid rgba(8, 145, 178, 0.12);
+}
+
+.nav__links a {
+  color: var(--text-secondary);
+}
+
+.nav__links a:hover {
+  color: var(--accent);
+  background: rgba(8, 145, 178, 0.06);
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  background:
+    radial-gradient(ellipse 75% 55% at 65% 35%, rgba(8, 145, 178, 0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 45% 45% at 15% 75%, rgba(240, 236, 229, 0.8) 0%, transparent 55%),
+    #f9f8f6;
+}
+
+.hero__tagline { color: var(--text-primary); }
+
+.hero__photo-placeholder {
+  background: #e8e4de;
+  color: var(--accent);
+}
+
+/* ============================================================
+   STATS
+   ============================================================ */
+.stats {
+  background: var(--bg-secondary);
+  border-top: 1px solid rgba(8, 145, 178, 0.10);
+  border-bottom: 1px solid rgba(8, 145, 178, 0.10);
+}
+
+/* ============================================================
+   TIMELINE
+   ============================================================ */
+.timeline::before {
+  background: linear-gradient(to bottom, #0891b2 0%, rgba(8, 145, 178, 0.08) 100%);
+}
+
+.timeline__dot {
+  background: var(--accent);
+  box-shadow: 0 0 10px rgba(8, 145, 178, 0.40);
+}
+
+.timeline__year { color: var(--accent); }
+
+/* ============================================================
+   TABS
+   ============================================================ */
+.tabs-section { background: var(--bg-secondary); }
+
+.tab-btn--active,
+.tab-btn:hover { color: var(--accent); }
+
+.tab-btn--active { border-bottom-color: var(--accent); }
+
+/* ============================================================
+   KAMPAGNEN-FLOW
+   ============================================================ */
+.flow-step__icon {
+  background: rgba(8, 145, 178, 0.08);
+  border-color: rgba(8, 145, 178, 0.15);
+}
+
+.flow-step:hover .flow-step__icon {
+  background: rgba(8, 145, 178, 0.18);
+  border-color: var(--accent);
+}
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+.course-card {
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.course-card:hover {
+  border-color: rgba(8, 145, 178, 0.42);
+  box-shadow: 0 4px 20px rgba(8, 145, 178, 0.10);
+}
+
+.research-card {
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.research-card:hover {
+  border-color: rgba(8, 145, 178, 0.42);
+  box-shadow: 0 4px 20px rgba(8, 145, 178, 0.10);
+}
+
+/* ============================================================
+   SCHWERPUNKT-CARDS
+   ============================================================ */
+.schwerpunkt-card__icon {
+  background: rgba(8, 145, 178, 0.08);
+  border-color: rgba(8, 145, 178, 0.15);
+}
+
+.schwerpunkt-card:hover .schwerpunkt-card__icon {
+  background: rgba(8, 145, 178, 0.18);
+}
+
+/* ============================================================
+   KOOPERATION
+   ============================================================ */
+.coop-focus-box {
+  background: #ffffff;
+  border-color: rgba(8, 145, 178, 0.15);
+}
+
+.focus-tag {
+  background: rgba(8, 145, 178, 0.06);
+  border-color: rgba(8, 145, 178, 0.15);
+  color: var(--accent);
+}
+
+.focus-tag:hover {
+  background: rgba(8, 145, 178, 0.14);
+  border-color: var(--accent);
+}
+
+/* ============================================================
+   KONTAKT
+   ============================================================ */
+.kontakt { background: #ffffff; }
+
+.kontakt-card {
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.kontakt-card:hover {
+  border-color: rgba(8, 145, 178, 0.42);
+  box-shadow: 0 6px 24px rgba(8, 145, 178, 0.12);
+}
+
+.kontakt-card__value { color: var(--accent); }
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn--primary {
+  background: var(--accent);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(8, 145, 178, 0.28);
+}
+
+.btn--primary:hover {
+  background: var(--accent-hover);
+  color: #ffffff;
+  box-shadow: 0 6px 24px rgba(8, 145, 178, 0.42);
+}
+
+.btn--secondary {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn--secondary:hover {
+  background: rgba(8, 145, 178, 0.07);
+  color: var(--accent);
+}
+
+.lang-toggle:hover {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid rgba(8, 145, 178, 0.10);
+}
+
+.footer__links a:hover { color: var(--accent); }
+
+/* ============================================================
+   SCROLL-ANIMATION — dezent auf hellem Hintergrund
+   ============================================================ */
+.animate-on-scroll { transform: translateY(20px); }
