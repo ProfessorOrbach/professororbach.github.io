@@ -76,8 +76,12 @@ const translations = {
 
     // Kooperation
     'coop.heading':         'Zusammenarbeit mit Unternehmen',
-    'coop.body':            'Ein Schwerpunkt meiner Arbeit liegt auf digitalen Kampagnen im Versicherungs-Kundenbestand. In den vergangenen Jahren habe ich einen durchgängigen Kampagnen-Flow entwickelt – von der ersten Idee über Konzeption und Testing bis hin zum Go Live. Gerne bringe ich diese Erfahrung in Beratungs- und Praxisprojekte ein, um moderne und attraktive Kundenerlebnisse zu gestalten.',
-    'coop.body2':           'Ein weiterer Fokus liegt auf Marketing Data, Cloud-Anwendungen und KI. Dabei beschäftige ich mich insbesondere mit der Frage, wie spartenübergreifende Daten sinnvoll nutzbar gemacht werden können und welche datengetriebenen Use Cases echten Mehrwert für Versicherer schaffen.',
+    'coop.sp1.badge':       'Schwerpunkt',
+    'coop.sp1.title':       'Digitale Kampagnen im Kundenbestand',
+    'coop.sp2.badge':       'Schwerpunkt',
+    'coop.sp2.title':       'Marketing Data, Cloud &amp; KI',
+    'coop.body':            'In den vergangenen Jahren habe ich einen durchgängigen Kampagnen-Flow entwickelt – von der ersten Idee über Konzeption und Testing bis hin zum Go Live. Gerne bringe ich diese Erfahrung in Beratungs- und Praxisprojekte ein, um moderne und attraktive Kundenerlebnisse zu gestalten.',
+    'coop.body2':           'Ich beschäftige mich insbesondere mit der Frage, wie spartenübergreifende Daten sinnvoll nutzbar gemacht werden können und welche datengetriebenen Use Cases echten Mehrwert für Versicherer schaffen.',
     'coop.body3':           'Ich freue mich über den Austausch mit Unternehmen, die neue Ideen entwickeln, bestehende Prozesse weiterdenken oder gemeinsam innovative Lösungen erarbeiten möchten. Sie können mir gerne direkt schreiben oder einen Termin buchen.',
     'coop.formats.heading': 'Mögliche Formen der Zusammenarbeit',
     'coop.f1':              'Beratung und Sparring',
@@ -191,8 +195,12 @@ const translations = {
 
     // Kooperation
     'coop.heading':         'Working with Companies',
-    'coop.body':            'A key focus of my work is digital campaigns in insurance existing-customer portfolios. Over the past years I have developed an end-to-end campaign flow — from the initial idea through conception and testing to go-live. I am happy to bring this experience into consulting and practice projects to create modern, compelling customer experiences.',
-    'coop.body2':           'A further focus is marketing data, cloud applications and AI — specifically how cross-line data can be used effectively and which data-driven use cases create real value for insurers.',
+    'coop.sp1.badge':       'Focus Area',
+    'coop.sp1.title':       'Digital Campaigns in Existing-Customer Portfolios',
+    'coop.sp2.badge':       'Focus Area',
+    'coop.sp2.title':       'Marketing Data, Cloud &amp; AI',
+    'coop.body':            'Over the past years I have developed an end-to-end campaign flow — from the initial idea through conception and testing to go-live. I am happy to bring this experience into consulting and practice projects to create modern, compelling customer experiences.',
+    'coop.body2':           'My particular focus is on how cross-line data can be used effectively and which data-driven use cases create real value for insurers.',
     'coop.body3':           'I welcome conversations with companies that want to develop new ideas, rethink existing processes, or work together on innovative solutions. Feel free to write to me directly or book a meeting.',
     'coop.formats.heading': 'Possible Forms of Collaboration',
     'coop.f1':              'Consulting and sparring',

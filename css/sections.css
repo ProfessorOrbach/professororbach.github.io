@@ -354,6 +354,76 @@
 /* ============================================================
    KOOPERATION
    ============================================================ */
+.coop__panel-heading {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.schwerpunkt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.schwerpunkt-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 2rem;
+  transition: border-color var(--transition), box-shadow var(--transition), transform 0.2s ease;
+}
+
+.schwerpunkt-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: 0 8px 40px var(--accent-glow-lg);
+  transform: translateY(-4px);
+}
+
+.schwerpunkt-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(0, 180, 216, 0.12);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.1rem;
+  transition: background var(--transition);
+}
+
+.schwerpunkt-card:hover .schwerpunkt-card__icon {
+  background: rgba(0, 180, 216, 0.22);
+}
+
+.schwerpunkt-card__badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  opacity: 0.75;
+  margin-bottom: 0.4rem;
+}
+
+.schwerpunkt-card h3 {
+  color: var(--text-primary);
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+}
+
+.schwerpunkt-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin: 0;
+}
+
+
 .coop-layout {
   display: grid;
   grid-template-columns: 1fr 320px;

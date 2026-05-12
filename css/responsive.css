@@ -38,6 +38,10 @@
   .flow-step__label { font-size: 0.65rem; }
 
   /* Kooperation */
+  .schwerpunkt-grid {
+    grid-template-columns: 1fr;
+  }
+
   .coop-layout {
     grid-template-columns: 1fr;
     gap: 2rem;

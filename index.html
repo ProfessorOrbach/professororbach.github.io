@@ -19,9 +19,9 @@
     <a href="#hero" class="nav__logo">D. Orbach</a>
     <div class="nav__links">
       <a href="#vita" data-i18n="nav.vita">Vita</a>
+      <a href="#kooperation" data-i18n="nav.kooperation">Kooperation</a>
       <a href="#lehre" data-i18n="nav.lehre">Lehre</a>
       <a href="#forschung" data-i18n="nav.forschung">Forschung</a>
-      <a href="#kooperation" data-i18n="nav.kooperation">Kooperation</a>
       <a href="#kontakt" data-i18n="nav.kontakt">Kontakt</a>
     </div>
     <button class="lang-toggle" id="langToggle" aria-label="Sprache wechseln">EN</button>
@@ -205,36 +205,38 @@
       <!-- KOOPERATION -->
       <div class="tab-panel tab-panel--active" id="panel-kooperation" role="tabpanel">
 
-        <div class="coop-layout">
+        <h3 class="coop__panel-heading" data-i18n="coop.heading">Zusammenarbeit mit Unternehmen</h3>
 
-          <div class="coop-text animate-on-scroll">
-            <h3 data-i18n="coop.heading">Zusammenarbeit mit Unternehmen</h3>
-            <p data-i18n="coop.body">Ein Schwerpunkt meiner Arbeit liegt auf digitalen Kampagnen im Versicherungs-Kundenbestand. In den vergangenen Jahren habe ich einen durchgängigen Kampagnen-Flow entwickelt – von der ersten Idee über Konzeption und Testing bis hin zum Go Live. Gerne bringe ich diese Erfahrung in Beratungs- und Praxisprojekte ein, um moderne und attraktive Kundenerlebnisse zu gestalten.</p>
-            <p data-i18n="coop.body2">Ein weiterer Fokus liegt auf Marketing Data, Cloud-Anwendungen und KI. Dabei beschäftige ich mich insbesondere mit der Frage, wie spartenübergreifende Daten sinnvoll nutzbar gemacht werden können und welche datengetriebenen Use Cases echten Mehrwert für Versicherer schaffen.</p>
-            <p data-i18n="coop.body3">Ich freue mich über den Austausch mit Unternehmen, die neue Ideen entwickeln, bestehende Prozesse weiterdenken oder gemeinsam innovative Lösungen erarbeiten möchten. Sie können mir gerne direkt schreiben oder einen Termin buchen.</p>
-            <h4 class="coop__formats-heading" data-i18n="coop.formats.heading">Mögliche Formen der Zusammenarbeit</h4>
-            <ul class="coop__formats">
-              <li data-i18n="coop.f1">Beratung und Sparring</li>
-              <li data-i18n="coop.f2">Vorträge und Workshops</li>
-              <li data-i18n="coop.f3">Gemeinsame Forschungsprojekte</li>
-              <li data-i18n="coop.f4">Praxisprojekte mit Studierenden</li>
-            </ul>
-            <a href="#kontakt" class="btn btn--primary" data-i18n="coop.cta">Gespräch anfragen</a>
+        <!-- Schwerpunkt Cards -->
+        <div class="schwerpunkt-grid">
+
+          <div class="schwerpunkt-card animate-on-scroll">
+            <div class="schwerpunkt-card__icon" aria-hidden="true">&#127919;</div>
+            <div class="schwerpunkt-card__badge" data-i18n="coop.sp1.badge">Schwerpunkt</div>
+            <h3 data-i18n="coop.sp1.title">Digitale Kampagnen im Kundenbestand</h3>
+            <p data-i18n="coop.body">In den vergangenen Jahren habe ich einen durchgängigen Kampagnen-Flow entwickelt – von der ersten Idee über Konzeption und Testing bis hin zum Go Live. Gerne bringe ich diese Erfahrung in Beratungs- und Praxisprojekte ein, um moderne und attraktive Kundenerlebnisse zu gestalten.</p>
           </div>
 
-          <div class="coop-focus-box animate-on-scroll">
-            <h4 data-i18n="coop.focus.heading">Womit ich helfen kann</h4>
-            <div class="focus-tags">
-              <span class="focus-tag" data-i18n="coop.tag1">Digitale Kampagnen</span>
-              <span class="focus-tag" data-i18n="coop.tag2">CRM &amp; Bestandskunden</span>
-              <span class="focus-tag" data-i18n="coop.tag3">Customer Journey</span>
-              <span class="focus-tag" data-i18n="coop.tag4">Marketing Data</span>
-              <span class="focus-tag" data-i18n="coop.tag5">KI-gestütztes Marketing</span>
-              <span class="focus-tag" data-i18n="coop.tag6">Cloud-Anwendungen</span>
-              <span class="focus-tag" data-i18n="coop.tag7">Cyberversicherung</span>
-            </div>
+          <div class="schwerpunkt-card animate-on-scroll">
+            <div class="schwerpunkt-card__icon" aria-hidden="true">&#128202;</div>
+            <div class="schwerpunkt-card__badge" data-i18n="coop.sp2.badge">Schwerpunkt</div>
+            <h3 data-i18n="coop.sp2.title">Marketing Data, Cloud &amp; KI</h3>
+            <p data-i18n="coop.body2">Ich beschäftige mich insbesondere mit der Frage, wie spartenübergreifende Daten sinnvoll nutzbar gemacht werden können und welche datengetriebenen Use Cases echten Mehrwert für Versicherer schaffen.</p>
           </div>
 
+        </div>
+
+        <!-- Einladung + Formate -->
+        <div class="coop-text animate-on-scroll">
+          <p data-i18n="coop.body3">Ich freue mich über den Austausch mit Unternehmen, die neue Ideen entwickeln, bestehende Prozesse weiterdenken oder gemeinsam innovative Lösungen erarbeiten möchten. Sie können mir gerne direkt schreiben oder einen Termin buchen.</p>
+          <h4 class="coop__formats-heading" data-i18n="coop.formats.heading">Mögliche Formen der Zusammenarbeit</h4>
+          <ul class="coop__formats">
+            <li data-i18n="coop.f1">Beratung und Sparring</li>
+            <li data-i18n="coop.f2">Vorträge und Workshops</li>
+            <li data-i18n="coop.f3">Gemeinsame Forschungsprojekte</li>
+            <li data-i18n="coop.f4">Praxisprojekte mit Studierenden</li>
+          </ul>
+          <a href="#kontakt" class="btn btn--primary" data-i18n="coop.cta">Gespräch anfragen</a>
         </div>
       </div>
 
