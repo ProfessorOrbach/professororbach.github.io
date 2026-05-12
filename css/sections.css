@@ -377,6 +377,15 @@
   font-weight: 600;
 }
 
+.coop__formats-heading {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin: 1.75rem 0 0.75rem;
+}
+
 .coop__formats {
   margin: 1.25rem 0 1.75rem;
   display: flex;

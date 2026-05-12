@@ -29,9 +29,20 @@ tabBtns.forEach(btn => {
   btn.addEventListener('click', () => activateTab(btn.dataset.tab));
 });
 
+// Intercept nav/CTA link clicks that target tab hashes — scroll to section + activate tab
+const validTabs = ['lehre', 'forschung', 'kooperation'];
+document.querySelectorAll('a[href="#lehre"], a[href="#forschung"], a[href="#kooperation"]').forEach(link => {
+  link.addEventListener('click', e => {
+    const hash = link.getAttribute('href').slice(1);
+    e.preventDefault();
+    const section = document.querySelector('.tabs-section');
+    section.scrollIntoView({ behavior: 'smooth' });
+    activateTab(hash);
+  });
+});
+
 // Deep-link: activate correct tab from URL hash on page load
 (function initTabs() {
-  const validTabs = ['lehre', 'forschung', 'kooperation'];
   const hash = window.location.hash.slice(1);
   if (validTabs.includes(hash)) {
     activateTab(hash);
