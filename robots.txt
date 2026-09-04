@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://professororbach.github.io/dominik-orbach/sitemap.xml
+Sitemap: https://professororbach.github.io/sitemap.xml
