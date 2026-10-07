@@ -113,6 +113,11 @@ const translations = {
     'kontakt.form.message':  'Nachricht',
     'kontakt.form.send':     'Nachricht senden',
 
+    // Hub Teaser
+    'hub.title': 'Marketing Automation Hub',
+    'hub.desc':  'Eine kuratierte Wissensplattform zu Marketing Automation in der Versicherungswirtschaft — mit Use-Case-Bibliothek, CX-Flow, Strategie-Framework und Controlling. Für Studierende und Kooperationspartner.',
+    'hub.cta':   'Zum Hub →',
+
     // Footer
     'footer.imprint': 'Impressum',
     'footer.privacy': 'Datenschutz',
@@ -231,6 +236,11 @@ const translations = {
     'kontakt.form.subject':  'Subject',
     'kontakt.form.message':  'Message',
     'kontakt.form.send':     'Send message',
+
+    // Hub Teaser
+    'hub.title': 'Marketing Automation Hub',
+    'hub.desc':  'A curated knowledge platform on marketing automation in the insurance industry — featuring a use-case library, CX-flow, strategy framework and controlling. For students and cooperation partners.',
+    'hub.cta':   'Open Hub →',
 
     // Footer
     'footer.imprint': 'Legal Notice',
