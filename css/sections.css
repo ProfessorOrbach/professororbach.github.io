@@ -689,48 +689,70 @@
 .footer__links a:hover { color: var(--accent); }
 
 /* ============================================================
-   HUB TEASER
+   HUB BANNER
    ============================================================ */
-.hub-teaser {
-  margin-top: 2.5rem;
-  border: 1.5px solid var(--accent);
-  border-radius: 16px;
-  background: linear-gradient(135deg, rgba(var(--accent-rgb, 8,145,178), 0.04) 0%, transparent 100%);
-  overflow: hidden;
+.hub-banner {
+  background: #1c2434;
+  padding: 3rem 0;
 }
-.hub-teaser__inner {
+.hub-banner__inner {
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 1.25rem;
+  grid-template-columns: 56px 1fr auto;
+  gap: 1.75rem;
   align-items: center;
-  padding: 1.5rem 1.75rem;
 }
-.hub-teaser__icon {
-  font-size: 2rem;
-  line-height: 1;
-}
-.hub-teaser__text h4 {
-  margin: 0 0 .25rem;
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--text-primary);
-}
-.hub-teaser__text p {
-  margin: 0;
-  font-size: .875rem;
-  color: var(--text-muted);
-  line-height: 1.5;
-}
-.hub-teaser__btn {
-  white-space: nowrap;
+.hub-banner__icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(8, 145, 178, 0.15);
+  border: 1px solid rgba(8, 145, 178, 0.35);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0891b2;
   flex-shrink: 0;
 }
-@media (max-width: 640px) {
-  .hub-teaser__inner {
-    grid-template-columns: auto 1fr;
+.hub-banner__label {
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #0891b2;
+  margin: 0 0 .35rem;
+}
+.hub-banner__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 .4rem;
+}
+.hub-banner__desc {
+  font-size: .875rem;
+  color: rgba(255,255,255,0.6);
+  margin: 0;
+  line-height: 1.55;
+}
+.hub-banner__btn {
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding: .75rem 1.5rem;
+  border-radius: 8px;
+  background: #0891b2;
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .15s;
+}
+.hub-banner__btn:hover { background: #0e7490; }
+
+@media (max-width: 720px) {
+  .hub-banner__inner {
+    grid-template-columns: 48px 1fr;
     grid-template-rows: auto auto;
   }
-  .hub-teaser__btn {
+  .hub-banner__btn {
     grid-column: 1 / -1;
     text-align: center;
   }
